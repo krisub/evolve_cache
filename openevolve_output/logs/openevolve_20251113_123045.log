@@ -1,0 +1,12 @@
+2025-11-13 12:30:45,636 - openevolve.controller - INFO - Logging to /users/krisub/evolve_cache/openevolve_output/logs/openevolve_20251113_123045.log
+2025-11-13 12:30:45,643 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2025-11-13 12:30:45,765 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: gpt-4-turbo
+2025-11-13 12:30:45,765 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: gpt-4-turbo (weight: 1.00)
+2025-11-13 12:30:45,856 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-11-13 12:30:45,857 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 12:30:45,857 - openevolve.database - INFO - Initialized program database with 0 programs
+2025-11-13 12:30:45,862 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:30:45,862 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:30:45,862 - openevolve.controller - INFO - Initialized OpenEvolve with /users/krisub/evolve_cache/initial_program.cpp
+2025-11-13 12:30:45,862 - openevolve.controller - INFO - Adding initial program to database
+2025-11-13 12:30:51,770 - openevolve.evaluator - WARNING - Evaluation attempt 1/4 failed for program 9c030f95-d729-4d9f-a621-b78dfba1146b: EvaluationResult.__init__() got an unexpected keyword argument 'score'

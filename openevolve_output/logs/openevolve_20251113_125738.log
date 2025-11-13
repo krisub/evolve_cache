@@ -1,0 +1,616 @@
+2025-11-13 12:57:38,757 - openevolve.controller - INFO - Logging to /users/krisub/evolve_cache/openevolve_output/logs/openevolve_20251113_125738.log
+2025-11-13 12:57:38,764 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2025-11-13 12:57:38,885 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: gpt-4-turbo
+2025-11-13 12:57:38,885 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: gpt-4-turbo (weight: 1.00)
+2025-11-13 12:57:38,976 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-11-13 12:57:38,976 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 12:57:38,977 - openevolve.database - INFO - Initialized program database with 0 programs
+2025-11-13 12:57:38,982 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:38,982 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:38,982 - openevolve.controller - INFO - Initialized OpenEvolve with /users/krisub/evolve_cache/initial_program.cpp
+2025-11-13 12:57:38,982 - openevolve.controller - INFO - Adding initial program to database
+2025-11-13 12:57:44,578 - openevolve.evaluator - INFO - Evaluated program 0f6ba557-6787-4c1b-9c7a-647f20cc6179 in 5.60s: combined_score=-inf
+2025-11-13 12:57:44,578 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 5, 'diversity': 0}
+2025-11-13 12:57:44,583 - openevolve.process_parallel - INFO - Initialized process parallel controller with 4 workers
+2025-11-13 12:57:44,587 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2025-11-13 12:57:44,587 - openevolve.controller - INFO - Using island-based evolution with 5 islands
+2025-11-13 12:57:44,587 - openevolve.database - INFO - Island Status:
+2025-11-13 12:57:44,587 - openevolve.database - INFO -  * Island 0: 1 programs, best=-inf, avg=-inf, diversity=0.00, gen=0 (best: 0f6ba557-6787-4c1b-9c7a-647f20cc6179)
+2025-11-13 12:57:44,587 - openevolve.database - INFO -    Island 1: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2025-11-13 12:57:44,588 - openevolve.database - INFO -    Island 2: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2025-11-13 12:57:44,588 - openevolve.database - INFO -    Island 3: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2025-11-13 12:57:44,588 - openevolve.database - INFO -    Island 4: 0 programs, best=0.0000, avg=0.0000, diversity=0.00, gen=0
+2025-11-13 12:57:44,588 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 1 for 100 iterations (total: 101)
+2025-11-13 12:57:44,608 - openevolve.process_parallel - INFO - Early stopping disabled
+2025-11-13 12:57:44,811 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 12:57:44,812 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 12:57:44,812 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 12:57:44,812 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 12:57:44,814 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:44,815 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:44,815 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:44,815 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:44,815 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:44,815 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:44,815 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:44,815 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 12:57:44,816 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:57:44,817 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:57:44,817 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:57:44,817 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:07,243 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:07,281 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:07,287 - openevolve.process_parallel - WARNING - Iteration 4 error: No valid diffs found in response
+2025-11-13 12:58:08,374 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:08,409 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:08,413 - openevolve.process_parallel - WARNING - Iteration 2 error: No valid diffs found in response
+2025-11-13 12:58:12,693 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:12,727 - openevolve.process_parallel - WARNING - Iteration 1 error: No valid diffs found in response
+2025-11-13 12:58:12,727 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:12,750 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:12,785 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:12,790 - openevolve.process_parallel - WARNING - Iteration 3 error: No valid diffs found in response
+2025-11-13 12:58:31,182 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:31,191 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:31,194 - openevolve.process_parallel - WARNING - Iteration 5 error: No valid diffs found in response
+2025-11-13 12:58:32,116 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:32,134 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:32,137 - openevolve.process_parallel - WARNING - Iteration 6 error: No valid diffs found in response
+2025-11-13 12:58:36,092 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:36,103 - openevolve.process_parallel - WARNING - Iteration 8 error: No valid diffs found in response
+2025-11-13 12:58:36,104 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:36,160 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:36,183 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:36,186 - openevolve.process_parallel - WARNING - Iteration 7 error: No valid diffs found in response
+2025-11-13 12:58:56,070 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:56,080 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:56,085 - openevolve.process_parallel - WARNING - Iteration 9 error: No valid diffs found in response
+2025-11-13 12:58:57,258 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:57,267 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:57,272 - openevolve.process_parallel - WARNING - Iteration 10 error: No valid diffs found in response
+2025-11-13 12:58:58,285 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:58:58,295 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:58:58,296 - openevolve.process_parallel - WARNING - Iteration 12 error: No valid diffs found in response
+2025-11-13 12:59:01,222 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:59:01,241 - openevolve.process_parallel - WARNING - Iteration 11 error: No valid diffs found in response
+2025-11-13 12:59:01,242 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:59:19,089 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:59:19,097 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:59:19,100 - openevolve.process_parallel - WARNING - Iteration 13 error: No valid diffs found in response
+2025-11-13 12:59:23,490 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:59:23,504 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:59:23,506 - openevolve.process_parallel - WARNING - Iteration 15 error: No valid diffs found in response
+2025-11-13 12:59:23,809 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:59:23,818 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:59:23,824 - openevolve.process_parallel - WARNING - Iteration 14 error: No valid diffs found in response
+2025-11-13 12:59:26,921 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:59:26,935 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:59:26,943 - openevolve.process_parallel - WARNING - Iteration 16 error: No valid diffs found in response
+2025-11-13 12:59:40,166 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:59:40,181 - openevolve.process_parallel - WARNING - Iteration 17 error: No valid diffs found in response
+2025-11-13 12:59:40,181 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:59:42,978 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:59:42,988 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:59:42,993 - openevolve.process_parallel - WARNING - Iteration 18 error: No valid diffs found in response
+2025-11-13 12:59:47,822 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:59:47,838 - openevolve.process_parallel - WARNING - Iteration 19 error: No valid diffs found in response
+2025-11-13 12:59:47,839 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:59:49,802 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 12:59:49,811 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 12:59:49,812 - openevolve.process_parallel - WARNING - Iteration 20 error: No valid diffs found in response
+2025-11-13 12:59:49,931 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 12:59:49,932 - openai._base_client - INFO - Retrying request to /chat/completions in 1.392000 seconds
+2025-11-13 12:59:51,395 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 12:59:51,397 - openai._base_client - INFO - Retrying request to /chat/completions in 1.364000 seconds
+2025-11-13 13:00:01,053 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:00:01,062 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:00:01,066 - openevolve.process_parallel - WARNING - Iteration 21 error: No valid diffs found in response
+2025-11-13 13:00:09,622 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:00:09,632 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:00:09,637 - openevolve.process_parallel - WARNING - Iteration 23 error: No valid diffs found in response
+2025-11-13 13:00:14,332 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:00:14,341 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:00:14,347 - openevolve.process_parallel - WARNING - Iteration 22 error: No valid diffs found in response
+2025-11-13 13:00:14,570 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:14,572 - openai._base_client - INFO - Retrying request to /chat/completions in 0.632000 seconds
+2025-11-13 13:00:15,314 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:15,315 - openai._base_client - INFO - Retrying request to /chat/completions in 1.216000 seconds
+2025-11-13 13:00:22,843 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:00:22,852 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:00:22,861 - openevolve.process_parallel - WARNING - Iteration 24 error: No valid diffs found in response
+2025-11-13 13:00:23,007 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:23,009 - openai._base_client - INFO - Retrying request to /chat/completions in 0.060000 seconds
+2025-11-13 13:00:23,300 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:23,302 - openai._base_client - INFO - Retrying request to /chat/completions in 1.180000 seconds
+2025-11-13 13:00:26,559 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:00:26,576 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:00:26,579 - openevolve.process_parallel - WARNING - Iteration 25 error: No valid diffs found in response
+2025-11-13 13:00:26,689 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:26,691 - openai._base_client - INFO - Retrying request to /chat/completions in 4.336000 seconds
+2025-11-13 13:00:30,809 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:00:30,824 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:00:30,825 - openevolve.process_parallel - WARNING - Iteration 26 error: No valid diffs found in response
+2025-11-13 13:00:30,938 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:30,940 - openai._base_client - INFO - Retrying request to /chat/completions in 1.478000 seconds
+2025-11-13 13:00:31,193 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:31,194 - openai._base_client - INFO - Retrying request to /chat/completions in 1.248000 seconds
+2025-11-13 13:00:32,485 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:32,486 - openai._base_client - INFO - Retrying request to /chat/completions in 1.468000 seconds
+2025-11-13 13:00:32,513 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:32,514 - openai._base_client - INFO - Retrying request to /chat/completions in 1.224000 seconds
+2025-11-13 13:00:42,712 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:00:42,721 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:00:42,725 - openevolve.process_parallel - WARNING - Iteration 27 error: No valid diffs found in response
+2025-11-13 13:00:42,846 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:42,848 - openai._base_client - INFO - Retrying request to /chat/completions in 4.308000 seconds
+2025-11-13 13:00:47,266 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:47,268 - openai._base_client - INFO - Retrying request to /chat/completions in 1.084000 seconds
+2025-11-13 13:00:48,445 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:48,451 - openai._base_client - INFO - Retrying request to /chat/completions in 0.134000 seconds
+2025-11-13 13:00:50,955 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:00:50,969 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:00:50,975 - openevolve.process_parallel - WARNING - Iteration 28 error: No valid diffs found in response
+2025-11-13 13:00:51,095 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:51,101 - openai._base_client - INFO - Retrying request to /chat/completions in 3.916000 seconds
+2025-11-13 13:00:55,112 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:00:55,113 - openai._base_client - INFO - Retrying request to /chat/completions in 1.210000 seconds
+2025-11-13 13:01:00,709 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:01:00,718 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:01:00,727 - openevolve.process_parallel - WARNING - Iteration 29 error: No valid diffs found in response
+2025-11-13 13:01:00,818 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:00,824 - openai._base_client - INFO - Retrying request to /chat/completions in 2.144000 seconds
+2025-11-13 13:01:02,071 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:01:02,080 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:01:02,088 - openevolve.process_parallel - WARNING - Iteration 30 error: No valid diffs found in response
+2025-11-13 13:01:02,157 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:02,159 - openai._base_client - INFO - Retrying request to /chat/completions in 2.140000 seconds
+2025-11-13 13:01:03,563 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:03,564 - openai._base_client - INFO - Retrying request to /chat/completions in 2.352000 seconds
+2025-11-13 13:01:04,392 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:04,398 - openai._base_client - INFO - Retrying request to /chat/completions in 1.304000 seconds
+2025-11-13 13:01:09,358 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:01:09,367 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:01:09,376 - openevolve.process_parallel - WARNING - Iteration 31 error: No valid diffs found in response
+2025-11-13 13:01:09,511 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:09,513 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:01:16,336 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:16,337 - openai._base_client - INFO - Retrying request to /chat/completions in 3.976000 seconds
+2025-11-13 13:01:20,406 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:20,408 - openai._base_client - INFO - Retrying request to /chat/completions in 0.112000 seconds
+2025-11-13 13:01:24,791 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:01:24,807 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:01:24,809 - openevolve.process_parallel - WARNING - Iteration 34 error: No valid diffs found in response
+2025-11-13 13:01:24,928 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:24,930 - openai._base_client - INFO - Retrying request to /chat/completions in 2.022000 seconds
+2025-11-13 13:01:25,548 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:01:25,556 - openevolve.process_parallel - WARNING - Iteration 33 error: No valid diffs found in response
+2025-11-13 13:01:25,557 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:01:25,692 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:25,694 - openai._base_client - INFO - Retrying request to /chat/completions in 1.264000 seconds
+2025-11-13 13:01:27,051 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:27,052 - openai._base_client - INFO - Retrying request to /chat/completions in 2.604000 seconds
+2025-11-13 13:01:27,058 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:27,059 - openai._base_client - INFO - Retrying request to /chat/completions in 2.592000 seconds
+2025-11-13 13:01:30,486 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:01:30,494 - openevolve.process_parallel - WARNING - Iteration 32 error: No valid diffs found in response
+2025-11-13 13:01:30,495 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:01:30,558 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:30,559 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:01:37,366 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:37,367 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:01:43,258 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:01:43,270 - openevolve.process_parallel - WARNING - Iteration 35 error: No valid diffs found in response
+2025-11-13 13:01:43,271 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:01:43,459 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:43,460 - openai._base_client - INFO - Retrying request to /chat/completions in 2.352000 seconds
+2025-11-13 13:01:44,112 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:44,113 - openai._base_client - INFO - Retrying request to /chat/completions in 0.188000 seconds
+2025-11-13 13:01:44,411 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:44,414 - openevolve.llm.openai - WARNING - Error on attempt 1/4: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-f5Yhn2DJxispaPIWrkxhIBYN on tokens per min (TPM): Limit 30000, Used 27293, Requested 3322. Please try again in 1.23s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}. Retrying...
+2025-11-13 13:01:49,560 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:49,561 - openai._base_client - INFO - Retrying request to /chat/completions in 2.732000 seconds
+2025-11-13 13:01:58,150 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:01:58,162 - openevolve.process_parallel - WARNING - Iteration 37 error: No valid diffs found in response
+2025-11-13 13:01:58,163 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:01:58,289 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:58,291 - openai._base_client - INFO - Retrying request to /chat/completions in 0.750000 seconds
+2025-11-13 13:01:59,153 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:59,154 - openai._base_client - INFO - Retrying request to /chat/completions in 0.004000 seconds
+2025-11-13 13:01:59,287 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:01:59,289 - openai._base_client - INFO - Retrying request to /chat/completions in 1.002000 seconds
+2025-11-13 13:02:09,802 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:02:09,813 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:02:09,815 - openevolve.process_parallel - WARNING - Iteration 36 error: No valid diffs found in response
+2025-11-13 13:02:12,732 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:02:12,741 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:02:12,749 - openevolve.process_parallel - WARNING - Iteration 39 error: No valid diffs found in response
+2025-11-13 13:02:12,860 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:02:12,861 - openai._base_client - INFO - Retrying request to /chat/completions in 2.026000 seconds
+2025-11-13 13:02:15,002 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:02:15,003 - openai._base_client - INFO - Retrying request to /chat/completions in 1.334000 seconds
+2025-11-13 13:02:23,366 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:02:23,375 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:02:23,380 - openevolve.process_parallel - WARNING - Iteration 38 error: No valid diffs found in response
+2025-11-13 13:02:25,327 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:02:25,336 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:02:25,344 - openevolve.process_parallel - WARNING - Iteration 40 error: No valid diffs found in response
+2025-11-13 13:02:25,420 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:02:25,422 - openai._base_client - INFO - Retrying request to /chat/completions in 5.630000 seconds
+2025-11-13 13:02:31,191 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:02:31,192 - openai._base_client - INFO - Retrying request to /chat/completions in 1.060000 seconds
+2025-11-13 13:02:42,178 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:02:42,187 - openevolve.process_parallel - WARNING - Iteration 42 error: No valid diffs found in response
+2025-11-13 13:02:42,187 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:02:52,654 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:02:52,663 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:02:52,663 - openevolve.process_parallel - WARNING - Iteration 43 error: No valid diffs found in response
+2025-11-13 13:02:54,458 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:02:54,467 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:02:54,474 - openevolve.process_parallel - WARNING - Iteration 41 error: No valid diffs found in response
+2025-11-13 13:02:54,533 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:02:54,534 - openai._base_client - INFO - Retrying request to /chat/completions in 1.666000 seconds
+2025-11-13 13:02:59,208 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:02:59,225 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:02:59,227 - openevolve.process_parallel - WARNING - Iteration 44 error: No valid diffs found in response
+2025-11-13 13:02:59,308 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:02:59,309 - openai._base_client - INFO - Retrying request to /chat/completions in 3.752000 seconds
+2025-11-13 13:03:03,174 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:03:03,176 - openai._base_client - INFO - Retrying request to /chat/completions in 1.136000 seconds
+2025-11-13 13:03:15,073 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:03:15,082 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:03:15,085 - openevolve.process_parallel - WARNING - Iteration 45 error: No valid diffs found in response
+2025-11-13 13:03:20,689 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:03:20,699 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:03:20,699 - openevolve.process_parallel - WARNING - Iteration 46 error: No valid diffs found in response
+2025-11-13 13:03:23,898 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:03:23,909 - openevolve.process_parallel - WARNING - Iteration 47 error: No valid diffs found in response
+2025-11-13 13:03:23,910 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:03:24,049 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:03:24,050 - openai._base_client - INFO - Retrying request to /chat/completions in 2.904000 seconds
+2025-11-13 13:03:25,071 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:03:25,079 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:03:25,085 - openevolve.process_parallel - WARNING - Iteration 48 error: No valid diffs found in response
+2025-11-13 13:03:25,155 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:03:25,157 - openai._base_client - INFO - Retrying request to /chat/completions in 3.202000 seconds
+2025-11-13 13:03:27,018 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:03:27,019 - openai._base_client - INFO - Retrying request to /chat/completions in 2.640000 seconds
+2025-11-13 13:03:28,457 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:03:28,458 - openai._base_client - INFO - Retrying request to /chat/completions in 1.013000 seconds
+2025-11-13 13:03:38,035 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:03:38,044 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:03:38,047 - openevolve.process_parallel - WARNING - Iteration 49 error: No valid diffs found in response
+2025-11-13 13:03:38,157 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:03:38,158 - openai._base_client - INFO - Retrying request to /chat/completions in 6.048000 seconds
+2025-11-13 13:03:47,389 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:03:47,402 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:03:47,410 - openevolve.process_parallel - WARNING - Iteration 50 error: No valid diffs found in response
+2025-11-13 13:03:55,394 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:03:55,420 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:03:55,423 - openevolve.process_parallel - WARNING - Iteration 51 error: No valid diffs found in response
+2025-11-13 13:03:55,543 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:03:55,544 - openai._base_client - INFO - Retrying request to /chat/completions in 3.344000 seconds
+2025-11-13 13:03:58,955 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:03:58,956 - openai._base_client - INFO - Retrying request to /chat/completions in 1.156000 seconds
+2025-11-13 13:04:01,212 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:04:01,229 - openevolve.process_parallel - WARNING - Iteration 52 error: No valid diffs found in response
+2025-11-13 13:04:01,230 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:04:01,340 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:01,342 - openai._base_client - INFO - Retrying request to /chat/completions in 5.534000 seconds
+2025-11-13 13:04:06,604 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:04:06,613 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:04:06,617 - openevolve.process_parallel - WARNING - Iteration 53 error: No valid diffs found in response
+2025-11-13 13:04:06,719 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:06,720 - openai._base_client - INFO - Retrying request to /chat/completions in 1.428000 seconds
+2025-11-13 13:04:07,012 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:07,014 - openai._base_client - INFO - Retrying request to /chat/completions in 1.230000 seconds
+2025-11-13 13:04:08,263 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:08,264 - openai._base_client - INFO - Retrying request to /chat/completions in 1.306000 seconds
+2025-11-13 13:04:08,366 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:08,367 - openai._base_client - INFO - Retrying request to /chat/completions in 1.100000 seconds
+2025-11-13 13:04:10,050 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:04:10,083 - openevolve.process_parallel - WARNING - Iteration 54 error: No valid diffs found in response
+2025-11-13 13:04:10,083 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:04:21,241 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:04:21,262 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:04:21,265 - openevolve.process_parallel - WARNING - Iteration 55 error: No valid diffs found in response
+2025-11-13 13:04:21,337 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:21,338 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:04:28,112 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:28,114 - openai._base_client - INFO - Retrying request to /chat/completions in 4.122000 seconds
+2025-11-13 13:04:33,749 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:04:33,757 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:04:33,765 - openevolve.process_parallel - WARNING - Iteration 56 error: No valid diffs found in response
+2025-11-13 13:04:33,883 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:33,885 - openai._base_client - INFO - Retrying request to /chat/completions in 4.910000 seconds
+2025-11-13 13:04:35,522 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:04:35,531 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:04:35,535 - openevolve.process_parallel - WARNING - Iteration 58 error: No valid diffs found in response
+2025-11-13 13:04:35,646 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:35,647 - openai._base_client - INFO - Retrying request to /chat/completions in 4.456000 seconds
+2025-11-13 13:04:38,891 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:38,892 - openai._base_client - INFO - Retrying request to /chat/completions in 2.494000 seconds
+2025-11-13 13:04:41,497 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:41,499 - openai._base_client - INFO - Retrying request to /chat/completions in 6.622000 seconds
+2025-11-13 13:04:42,016 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:04:42,029 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:04:42,036 - openevolve.process_parallel - WARNING - Iteration 57 error: No valid diffs found in response
+2025-11-13 13:04:42,131 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:42,132 - openai._base_client - INFO - Retrying request to /chat/completions in 5.896000 seconds
+2025-11-13 13:04:48,167 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:48,169 - openai._base_client - INFO - Retrying request to /chat/completions in 1.246000 seconds
+2025-11-13 13:04:48,251 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:48,254 - openevolve.llm.openai - WARNING - Error on attempt 1/4: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-f5Yhn2DJxispaPIWrkxhIBYN on tokens per min (TPM): Limit 30000, Used 27259, Requested 3322. Please try again in 1.162s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}. Retrying...
+2025-11-13 13:04:53,421 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:53,422 - openai._base_client - INFO - Retrying request to /chat/completions in 2.644000 seconds
+2025-11-13 13:04:57,119 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:04:57,128 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:04:57,132 - openevolve.process_parallel - WARNING - Iteration 59 error: No valid diffs found in response
+2025-11-13 13:04:57,242 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:04:57,243 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:05:04,034 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:04,035 - openai._base_client - INFO - Retrying request to /chat/completions in 0.142000 seconds
+2025-11-13 13:05:04,478 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:05:04,497 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:05:04,502 - openevolve.process_parallel - WARNING - Iteration 61 error: No valid diffs found in response
+2025-11-13 13:05:13,243 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:05:13,252 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:05:13,252 - openevolve.process_parallel - WARNING - Iteration 62 error: No valid diffs found in response
+2025-11-13 13:05:25,578 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:05:25,587 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:05:25,590 - openevolve.process_parallel - WARNING - Iteration 60 error: No valid diffs found in response
+2025-11-13 13:05:25,694 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:25,695 - openai._base_client - INFO - Retrying request to /chat/completions in 2.524000 seconds
+2025-11-13 13:05:29,173 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:05:29,181 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:05:29,189 - openevolve.process_parallel - WARNING - Iteration 64 error: No valid diffs found in response
+2025-11-13 13:05:29,290 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:29,292 - openai._base_client - INFO - Retrying request to /chat/completions in 5.478000 seconds
+2025-11-13 13:05:34,941 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:05:34,941 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:34,942 - openai._base_client - INFO - Retrying request to /chat/completions in 1.320000 seconds
+2025-11-13 13:05:34,951 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:05:34,955 - openevolve.process_parallel - WARNING - Iteration 63 error: No valid diffs found in response
+2025-11-13 13:05:35,020 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:35,021 - openai._base_client - INFO - Retrying request to /chat/completions in 1.106000 seconds
+2025-11-13 13:05:36,212 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:36,213 - openai._base_client - INFO - Retrying request to /chat/completions in 1.274000 seconds
+2025-11-13 13:05:36,334 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:36,335 - openai._base_client - INFO - Retrying request to /chat/completions in 1.138000 seconds
+2025-11-13 13:05:37,551 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:37,554 - openevolve.llm.openai - WARNING - Error on attempt 1/4: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-f5Yhn2DJxispaPIWrkxhIBYN on tokens per min (TPM): Limit 30000, Used 26748, Requested 3322. Please try again in 140ms. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}. Retrying...
+2025-11-13 13:05:40,538 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:05:40,547 - openevolve.process_parallel - WARNING - Iteration 65 error: No valid diffs found in response
+2025-11-13 13:05:40,547 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:05:40,652 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:40,653 - openai._base_client - INFO - Retrying request to /chat/completions in 3.478000 seconds
+2025-11-13 13:05:42,703 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:42,704 - openai._base_client - INFO - Retrying request to /chat/completions in 2.814000 seconds
+2025-11-13 13:05:44,220 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:44,222 - openai._base_client - INFO - Retrying request to /chat/completions in 1.490000 seconds
+2025-11-13 13:05:52,417 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:05:52,427 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:05:52,435 - openevolve.process_parallel - WARNING - Iteration 66 error: No valid diffs found in response
+2025-11-13 13:05:52,517 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:52,519 - openai._base_client - INFO - Retrying request to /chat/completions in 6.264000 seconds
+2025-11-13 13:05:58,922 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:05:58,924 - openai._base_client - INFO - Retrying request to /chat/completions in 1.328000 seconds
+2025-11-13 13:05:59,984 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:05:59,999 - openevolve.process_parallel - WARNING - Iteration 68 error: No valid diffs found in response
+2025-11-13 13:06:00,000 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:06:00,065 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:00,066 - openai._base_client - INFO - Retrying request to /chat/completions in 0.272000 seconds
+2025-11-13 13:06:00,406 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:00,407 - openai._base_client - INFO - Retrying request to /chat/completions in 1.252000 seconds
+2025-11-13 13:06:01,833 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:01,834 - openai._base_client - INFO - Retrying request to /chat/completions in 6.398000 seconds
+2025-11-13 13:06:08,584 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:06:08,596 - openevolve.process_parallel - WARNING - Iteration 69 error: No valid diffs found in response
+2025-11-13 13:06:08,596 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:06:08,718 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:08,719 - openai._base_client - INFO - Retrying request to /chat/completions in 6.044000 seconds
+2025-11-13 13:06:14,906 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:14,907 - openai._base_client - INFO - Retrying request to /chat/completions in 1.282000 seconds
+2025-11-13 13:06:15,046 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:06:15,066 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:06:15,068 - openevolve.process_parallel - WARNING - Iteration 67 error: No valid diffs found in response
+2025-11-13 13:06:15,176 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:15,178 - openai._base_client - INFO - Retrying request to /chat/completions in 0.892000 seconds
+2025-11-13 13:06:16,293 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:16,295 - openai._base_client - INFO - Retrying request to /chat/completions in 1.256000 seconds
+2025-11-13 13:06:17,647 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:17,650 - openevolve.llm.openai - WARNING - Error on attempt 1/4: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-f5Yhn2DJxispaPIWrkxhIBYN on tokens per min (TPM): Limit 30000, Used 29901, Requested 3322. Please try again in 6.446s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}. Retrying...
+2025-11-13 13:06:19,097 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:06:19,106 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:06:19,106 - openevolve.process_parallel - WARNING - Iteration 70 error: No valid diffs found in response
+2025-11-13 13:06:19,189 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:19,191 - openai._base_client - INFO - Retrying request to /chat/completions in 4.910000 seconds
+2025-11-13 13:06:22,757 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:22,760 - openai._base_client - INFO - Retrying request to /chat/completions in 2.912000 seconds
+2025-11-13 13:06:25,772 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:25,773 - openai._base_client - INFO - Retrying request to /chat/completions in 6.352000 seconds
+2025-11-13 13:06:35,773 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:06:35,785 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:06:35,793 - openevolve.process_parallel - WARNING - Iteration 71 error: No valid diffs found in response
+2025-11-13 13:06:35,871 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:35,872 - openai._base_client - INFO - Retrying request to /chat/completions in 2.894000 seconds
+2025-11-13 13:06:38,857 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:38,858 - openai._base_client - INFO - Retrying request to /chat/completions in 1.258000 seconds
+2025-11-13 13:06:43,011 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:06:43,024 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:06:43,032 - openevolve.process_parallel - WARNING - Iteration 73 error: No valid diffs found in response
+2025-11-13 13:06:50,598 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:06:50,614 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:06:50,617 - openevolve.process_parallel - WARNING - Iteration 74 error: No valid diffs found in response
+2025-11-13 13:06:50,708 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:50,709 - openai._base_client - INFO - Retrying request to /chat/completions in 4.031000 seconds
+2025-11-13 13:06:54,891 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:06:54,892 - openai._base_client - INFO - Retrying request to /chat/completions in 1.364000 seconds
+2025-11-13 13:06:55,747 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:06:55,756 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:06:55,760 - openevolve.process_parallel - WARNING - Iteration 72 error: No valid diffs found in response
+2025-11-13 13:07:01,093 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:07:01,102 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:07:01,107 - openevolve.process_parallel - WARNING - Iteration 75 error: No valid diffs found in response
+2025-11-13 13:07:01,179 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:07:01,190 - openevolve.process_parallel - WARNING - Iteration 76 error: No valid diffs found in response
+2025-11-13 13:07:01,191 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:07:01,198 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:01,199 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:07:01,298 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:01,299 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:07:08,019 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:08,021 - openai._base_client - INFO - Retrying request to /chat/completions in 5.330000 seconds
+2025-11-13 13:07:08,083 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:08,084 - openai._base_client - INFO - Retrying request to /chat/completions in 5.478000 seconds
+2025-11-13 13:07:13,702 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:13,703 - openai._base_client - INFO - Retrying request to /chat/completions in 6.284000 seconds
+2025-11-13 13:07:15,264 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:07:15,280 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:07:15,286 - openevolve.process_parallel - WARNING - Iteration 77 error: No valid diffs found in response
+2025-11-13 13:07:15,392 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:15,393 - openai._base_client - INFO - Retrying request to /chat/completions in 4.594000 seconds
+2025-11-13 13:07:17,823 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:07:17,832 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:07:17,833 - openevolve.process_parallel - WARNING - Iteration 78 error: No valid diffs found in response
+2025-11-13 13:07:17,897 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:17,899 - openai._base_client - INFO - Retrying request to /chat/completions in 3.384000 seconds
+2025-11-13 13:07:20,100 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:20,101 - openai._base_client - INFO - Retrying request to /chat/completions in 2.808000 seconds
+2025-11-13 13:07:20,144 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:20,147 - openevolve.llm.openai - WARNING - Error on attempt 1/4: Error code: 429 - {'error': {'message': 'Rate limit reached for gpt-4-turbo-preview in organization org-f5Yhn2DJxispaPIWrkxhIBYN on tokens per min (TPM): Limit 30000, Used 27948, Requested 3322. Please try again in 2.54s. Visit https://platform.openai.com/account/rate-limits to learn more.', 'type': 'tokens', 'param': None, 'code': 'rate_limit_exceeded'}}. Retrying...
+2025-11-13 13:07:21,396 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:21,397 - openai._base_client - INFO - Retrying request to /chat/completions in 1.286000 seconds
+2025-11-13 13:07:25,310 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:25,311 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:07:32,081 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:32,082 - openai._base_client - INFO - Retrying request to /chat/completions in 3.886000 seconds
+2025-11-13 13:07:35,905 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:07:35,914 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:07:35,916 - openevolve.process_parallel - WARNING - Iteration 79 error: No valid diffs found in response
+2025-11-13 13:07:36,034 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:36,035 - openai._base_client - INFO - Retrying request to /chat/completions in 0.042000 seconds
+2025-11-13 13:07:46,570 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:07:46,582 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:07:46,588 - openevolve.process_parallel - WARNING - Iteration 81 error: No valid diffs found in response
+2025-11-13 13:07:46,683 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:46,684 - openai._base_client - INFO - Retrying request to /chat/completions in 3.998000 seconds
+2025-11-13 13:07:47,002 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:07:47,016 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:07:47,018 - openevolve.process_parallel - WARNING - Iteration 82 error: No valid diffs found in response
+2025-11-13 13:07:47,131 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:47,132 - openai._base_client - INFO - Retrying request to /chat/completions in 3.552000 seconds
+2025-11-13 13:07:50,820 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:07:50,821 - openai._base_client - INFO - Retrying request to /chat/completions in 2.434000 seconds
+2025-11-13 13:08:02,339 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:08:02,348 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:08:02,352 - openevolve.process_parallel - WARNING - Iteration 80 error: No valid diffs found in response
+2025-11-13 13:08:02,454 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:02,456 - openai._base_client - INFO - Retrying request to /chat/completions in 4.178000 seconds
+2025-11-13 13:08:02,556 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:08:02,565 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:08:02,568 - openevolve.process_parallel - WARNING - Iteration 83 error: No valid diffs found in response
+2025-11-13 13:08:02,698 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:02,699 - openai._base_client - INFO - Retrying request to /chat/completions in 3.850000 seconds
+2025-11-13 13:08:06,653 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:06,654 - openai._base_client - INFO - Retrying request to /chat/completions in 2.584000 seconds
+2025-11-13 13:08:06,693 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:06,695 - openai._base_client - INFO - Retrying request to /chat/completions in 2.732000 seconds
+2025-11-13 13:08:16,265 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:08:16,281 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:08:16,288 - openevolve.process_parallel - WARNING - Iteration 84 error: No valid diffs found in response
+2025-11-13 13:08:16,411 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:16,413 - openai._base_client - INFO - Retrying request to /chat/completions in 6.116000 seconds
+2025-11-13 13:08:16,989 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:08:17,012 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:08:17,015 - openevolve.process_parallel - WARNING - Iteration 85 error: No valid diffs found in response
+2025-11-13 13:08:17,138 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:17,139 - openai._base_client - INFO - Retrying request to /chat/completions in 1.458000 seconds
+2025-11-13 13:08:18,681 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:18,682 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:08:22,680 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:22,681 - openai._base_client - INFO - Retrying request to /chat/completions in 2.564000 seconds
+2025-11-13 13:08:34,281 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:08:34,294 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:08:34,295 - openevolve.process_parallel - WARNING - Iteration 87 error: No valid diffs found in response
+2025-11-13 13:08:34,399 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:34,401 - openai._base_client - INFO - Retrying request to /chat/completions in 5.498000 seconds
+2025-11-13 13:08:34,450 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:08:34,458 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:08:34,460 - openevolve.process_parallel - WARNING - Iteration 86 error: No valid diffs found in response
+2025-11-13 13:08:34,542 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:34,543 - openai._base_client - INFO - Retrying request to /chat/completions in 4.168000 seconds
+2025-11-13 13:08:40,008 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:40,010 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:08:46,799 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:46,800 - openai._base_client - INFO - Retrying request to /chat/completions in 1.130000 seconds
+2025-11-13 13:08:50,200 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:08:50,209 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:08:50,213 - openevolve.process_parallel - WARNING - Iteration 88 error: No valid diffs found in response
+2025-11-13 13:08:50,318 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:50,319 - openai._base_client - INFO - Retrying request to /chat/completions in 4.242000 seconds
+2025-11-13 13:08:52,621 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:08:52,630 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:08:52,637 - openevolve.process_parallel - WARNING - Iteration 89 error: No valid diffs found in response
+2025-11-13 13:08:52,761 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:52,763 - openai._base_client - INFO - Retrying request to /chat/completions in 3.246000 seconds
+2025-11-13 13:08:54,663 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:54,664 - openai._base_client - INFO - Retrying request to /chat/completions in 2.818000 seconds
+2025-11-13 13:08:56,113 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:08:56,114 - openai._base_client - INFO - Retrying request to /chat/completions in 1.152000 seconds
+2025-11-13 13:09:09,634 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:09:09,646 - openevolve.process_parallel - WARNING - Iteration 91 error: No valid diffs found in response
+2025-11-13 13:09:09,647 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:09:09,771 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:09,772 - openai._base_client - INFO - Retrying request to /chat/completions in 0.808000 seconds
+2025-11-13 13:09:11,617 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:09:11,626 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:09:11,630 - openevolve.process_parallel - WARNING - Iteration 90 error: No valid diffs found in response
+2025-11-13 13:09:11,737 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:11,738 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:09:18,528 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:18,529 - openai._base_client - INFO - Retrying request to /chat/completions in 1.370000 seconds
+2025-11-13 13:09:21,759 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:09:21,768 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:09:21,772 - openevolve.process_parallel - WARNING - Iteration 93 error: No valid diffs found in response
+2025-11-13 13:09:24,197 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:09:24,206 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:09:24,206 - openevolve.process_parallel - WARNING - Iteration 92 error: No valid diffs found in response
+2025-11-13 13:09:24,335 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:24,337 - openai._base_client - INFO - Retrying request to /chat/completions in 6.644000 seconds
+2025-11-13 13:09:31,121 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:31,122 - openai._base_client - INFO - Retrying request to /chat/completions in 4.644000 seconds
+2025-11-13 13:09:35,852 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:35,853 - openai._base_client - INFO - Retrying request to /chat/completions in 0.110000 seconds
+2025-11-13 13:09:42,778 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:09:42,787 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:09:42,791 - openevolve.process_parallel - WARNING - Iteration 94 error: No valid diffs found in response
+2025-11-13 13:09:49,910 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:09:49,919 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:09:49,926 - openevolve.process_parallel - WARNING - Iteration 95 error: No valid diffs found in response
+2025-11-13 13:09:49,985 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:49,986 - openai._base_client - INFO - Retrying request to /chat/completions in 0.390000 seconds
+2025-11-13 13:09:50,005 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:09:50,034 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4-turbo
+2025-11-13 13:09:50,040 - openevolve.process_parallel - WARNING - Iteration 96 error: No valid diffs found in response
+2025-11-13 13:09:50,143 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:50,145 - openai._base_client - INFO - Retrying request to /chat/completions in 0.254000 seconds
+2025-11-13 13:09:50,502 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:50,503 - openai._base_client - INFO - Retrying request to /chat/completions in 6.536000 seconds
+2025-11-13 13:09:57,162 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 13:09:57,164 - openai._base_client - INFO - Retrying request to /chat/completions in 2.446000 seconds
+2025-11-13 13:10:02,808 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:10:02,830 - openevolve.process_parallel - WARNING - Iteration 97 error: No valid diffs found in response
+2025-11-13 13:10:15,495 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:10:15,520 - openevolve.process_parallel - WARNING - Iteration 98 error: No valid diffs found in response
+2025-11-13 13:10:23,534 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:10:23,551 - openevolve.process_parallel - WARNING - Iteration 99 error: No valid diffs found in response
+2025-11-13 13:10:25,923 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 13:10:25,937 - openevolve.process_parallel - WARNING - Iteration 100 error: No valid diffs found in response
+2025-11-13 13:10:25,938 - openevolve.process_parallel - INFO - ✅ Evolution completed - Maximum iterations reached
+2025-11-13 13:10:25,941 - openevolve.database - INFO - Saved database with 1 programs to /users/krisub/evolve_cache/openevolve_output/checkpoints/checkpoint_100
+2025-11-13 13:10:25,942 - openevolve.controller - INFO - Saved best program at checkpoint 100 with metrics: combined_score=-inf
+2025-11-13 13:10:25,942 - openevolve.controller - INFO - Saved checkpoint at iteration 100 to /users/krisub/evolve_cache/openevolve_output/checkpoints/checkpoint_100
+2025-11-13 13:10:25,963 - openevolve.process_parallel - INFO - Stopped process pool
+2025-11-13 13:10:25,963 - openevolve.controller - INFO - Using tracked best program: 0f6ba557-6787-4c1b-9c7a-647f20cc6179
+2025-11-13 13:10:25,964 - openevolve.controller - INFO - Evolution complete. Best program has metrics: combined_score=-inf
+2025-11-13 13:10:25,965 - openevolve.controller - INFO - Saved best program to /users/krisub/evolve_cache/openevolve_output/best/best_program.cpp with program info to /users/krisub/evolve_cache/openevolve_output/best/best_program_info.json
