@@ -1,0 +1,43 @@
+initial_program_file: "evolve_cache_gdsf/initial_program.cpp"
+evaluator_file: "evolve_cache_gdsf/evaluator.py"
+
+max_iterations: 100
+
+llm:
+  models:
+    - name: "gpt-4-turbo"
+      weight: 1.0
+
+  # temperature: 0.7
+  # max_tokens: 4096
+  # timeout: 60
+-
+prompt:
+  system_message: |
+    You are an expert C++ programmer specializing in high-performance cache eviction algorithms.
+    Your goal is to evolve the provided C++ code (which implements a GDSF-like cache policy) to reduce its miss ratio.
+    The code must be fully self-contained in a single file and compile with g++ -std=c++17 -O2.
+    You must only output the complete, raw C++ code, starting with #include and ending with the last }.
+    Do not include markdown, explanations, or any other text outside the C++ code block.
+  
+  # Note: Your 'generation_prompts' key is not standard in default_config.yaml.
+  # The default system uses 'template_variations' or 'template_dir'.
+  # If 'generation_prompts' works for you, it's likely part of a custom setup.
+  # If it doesn't work, you'll need to adapt your prompts to the
+  # 'prompt.template_variations' structure.
+
+database:
+  db_path: "evolve_cache_gdsf_db.sqlite" # Your 'database_file' maps to this
+  population_size: 50                  # Your 'evolution.population_size'
+  num_islands: 5                       # Your 'evolution.num_islands'
+  migration_interval: 10               # Your 'evolution.migration_interval_generations'
+
+evaluator:
+  timeout: 300                        # Max time (seconds) for one evaluation
+  parallel_evaluations: 4             # Number of tests to run at once
+  cascade_evaluation: false           # Set to false, as your evaluator runs one full test
+  
+# MAP-Elites settings (inside 'database')
+# database:
+#   feature_dimensions: ["complexity", "diversity"]
+#   feature_bins: 10
