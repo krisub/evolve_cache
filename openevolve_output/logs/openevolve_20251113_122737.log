@@ -1,8 +1,0 @@
-2025-11-13 12:27:37,555 - openevolve.controller - INFO - Logging to /users/krisub/evolve_cache/openevolve_output/logs/openevolve_20251113_122737.log
-2025-11-13 12:27:37,562 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
-2025-11-13 12:27:37,684 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: gpt-4-turbo
-2025-11-13 12:27:37,684 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: gpt-4-turbo (weight: 1.00)
-2025-11-13 12:27:37,775 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
-2025-11-13 12:27:37,776 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
-2025-11-13 12:27:37,776 - openevolve.database - INFO - Initialized program database with 0 programs
-2025-11-13 12:27:37,781 - openevolve.evaluator - ERROR - Error loading evaluation function: Evaluation file /users/krisub/evolve_cache/evaluator.py does not contain an 'evaluate' function

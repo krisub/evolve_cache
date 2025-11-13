@@ -1,0 +1,161 @@
+2025-11-13 16:41:51,345 - openevolve.controller - INFO - Logging to /users/krisub/evolve_cache/openevolve_output/logs/openevolve_20251113_164151.log
+2025-11-13 16:41:51,352 - openevolve.controller - INFO - Set random seed to 42 for reproducibility
+2025-11-13 16:41:51,473 - openevolve.llm.openai - INFO - Initialized OpenAI LLM with model: gpt-4.1
+2025-11-13 16:41:51,473 - openevolve.llm.ensemble - INFO - Initialized LLM ensemble with models: gpt-4.1 (weight: 1.00)
+2025-11-13 16:41:51,564 - openevolve.prompt.sampler - INFO - Initialized prompt sampler
+2025-11-13 16:41:51,565 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 16:41:51,581 - openevolve.database - INFO - Reconstructed islands: restored 0 programs to islands
+2025-11-13 16:41:51,581 - openevolve.database - INFO - No island assignments found, distributing programs across islands
+2025-11-13 16:41:51,581 - openevolve.database - INFO - Distributed 133 programs across 5 islands
+2025-11-13 16:41:51,581 - openevolve.database - INFO - Loaded database with 133 programs from evolve_cache_gdsf_db.sqlite
+2025-11-13 16:41:51,593 - openevolve.database - INFO - Island Status:
+2025-11-13 16:41:51,593 - openevolve.database - INFO -  * Island 0: 27 programs, best=-inf, avg=-inf, diversity=32.78, gen=0
+2025-11-13 16:41:51,593 - openevolve.database - INFO -    Island 1: 27 programs, best=0.0000, avg=-inf, diversity=26.52, gen=0
+2025-11-13 16:41:51,593 - openevolve.database - INFO -    Island 2: 27 programs, best=-inf, avg=-inf, diversity=37.08, gen=0
+2025-11-13 16:41:51,594 - openevolve.database - INFO -    Island 3: 26 programs, best=0.0000, avg=-inf, diversity=46.80, gen=0
+2025-11-13 16:41:51,594 - openevolve.database - INFO -    Island 4: 26 programs, best=0.0000, avg=-inf, diversity=43.92, gen=0
+2025-11-13 16:41:51,594 - openevolve.database - INFO - Initialized program database with 133 programs
+2025-11-13 16:41:51,597 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,597 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,598 - openevolve.controller - INFO - Initialized OpenEvolve with /users/krisub/evolve_cache/initial_program.cpp
+2025-11-13 16:41:51,598 - openevolve.controller - INFO - Skipping initial program addition (resuming from iteration 0 with 133 existing programs)
+2025-11-13 16:41:51,599 - openevolve.process_parallel - INFO - Initialized process parallel controller with 4 workers
+2025-11-13 16:41:51,600 - openevolve.process_parallel - INFO - Started process pool with 4 processes
+2025-11-13 16:41:51,600 - openevolve.controller - INFO - Using island-based evolution with 5 islands
+2025-11-13 16:41:51,612 - openevolve.database - INFO - Island Status:
+2025-11-13 16:41:51,612 - openevolve.database - INFO -  * Island 0: 27 programs, best=-inf, avg=-inf, diversity=32.78, gen=0
+2025-11-13 16:41:51,612 - openevolve.database - INFO -    Island 1: 27 programs, best=0.0000, avg=-inf, diversity=26.52, gen=0
+2025-11-13 16:41:51,612 - openevolve.database - INFO -    Island 2: 27 programs, best=-inf, avg=-inf, diversity=37.08, gen=0
+2025-11-13 16:41:51,612 - openevolve.database - INFO -    Island 3: 26 programs, best=0.0000, avg=-inf, diversity=46.80, gen=0
+2025-11-13 16:41:51,612 - openevolve.database - INFO -    Island 4: 26 programs, best=0.0000, avg=-inf, diversity=43.92, gen=0
+2025-11-13 16:41:51,612 - openevolve.process_parallel - INFO - Starting process-based evolution from iteration 0 for 100 iterations (total: 100)
+2025-11-13 16:41:51,733 - openevolve.process_parallel - INFO - Early stopping disabled
+2025-11-13 16:41:51,877 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 16:41:51,880 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,880 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,887 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4.1
+2025-11-13 16:41:51,904 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 16:41:51,910 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,911 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,922 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4.1
+2025-11-13 16:41:51,930 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 16:41:51,933 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,933 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,937 - openevolve.prompt.sampler - INFO - Set custom templates: system=evaluator_system_message, user=None
+2025-11-13 16:41:51,940 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4.1
+2025-11-13 16:41:51,941 - openevolve.evaluator - INFO - Successfully loaded evaluation function from /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,941 - openevolve.evaluator - INFO - Initialized evaluator with /users/krisub/evolve_cache/evaluator.py
+2025-11-13 16:41:51,947 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4.1
+2025-11-13 16:41:52,447 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:41:52,449 - openai._base_client - INFO - Retrying request to /chat/completions in 2.784000 seconds
+2025-11-13 16:41:55,352 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:41:55,353 - openai._base_client - INFO - Retrying request to /chat/completions in 30.828000 seconds
+2025-11-13 16:41:59,680 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 16:42:08,742 - openevolve.evaluator - INFO - Evaluated program 0217125c-b34c-4ac3-b49d-7f725536f900 in 9.02s: combined_score=-inf
+2025-11-13 16:42:08,762 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4.1
+2025-11-13 16:42:08,895 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:42:08,897 - openai._base_client - INFO - Retrying request to /chat/completions in 30.631000 seconds
+2025-11-13 16:42:10,177 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 16:42:11,649 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 16:42:11,687 - openevolve.evaluator - INFO - Evaluated program 149c156e-4177-487f-b45a-785552d71e10 in 0.00s: combined_score=-inf
+2025-11-13 16:42:17,785 - openevolve.database - INFO - New MAP-Elites cell occupied in island 3: {'complexity': 5, 'diversity': 5}
+2025-11-13 16:42:17,785 - openevolve.database - INFO - Population size (134) exceeds limit (50), removing 84 programs
+2025-11-13 16:42:17,786 - openevolve.database - INFO - Population size after cleanup: 50
+2025-11-13 16:42:17,788 - openevolve.process_parallel - INFO - Iteration 3: Program 0217125c-b34c-4ac3-b49d-7f725536f900 (parent: f27d8c88-fa43-4d87-ac55-99268b51910c) completed in 16.80s
+2025-11-13 16:42:17,788 - openevolve.process_parallel - INFO - Metrics: combined_score=-inf
+2025-11-13 16:42:17,788 - openevolve.process_parallel - INFO - 🌟 New best solution found at iteration 3: 0217125c-b34c-4ac3-b49d-7f725536f900
+2025-11-13 16:42:17,788 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 3
+2025-11-13 16:42:17,800 - openevolve.database - INFO - Island Status:
+2025-11-13 16:42:17,800 - openevolve.database - INFO -  * Island 0: 9 programs, best=-inf, avg=-inf, diversity=32.97, gen=1
+2025-11-13 16:42:17,800 - openevolve.database - INFO -    Island 1: 11 programs, best=0.0000, avg=-inf, diversity=23.60, gen=0
+2025-11-13 16:42:17,800 - openevolve.database - INFO -    Island 2: 10 programs, best=-inf, avg=-inf, diversity=45.30, gen=0
+2025-11-13 16:42:17,800 - openevolve.database - INFO -    Island 3: 10 programs, best=0.0000, avg=-inf, diversity=33.25, gen=0 (best: 0217125c-b34c-4ac3-b49d-7f725536f900)
+2025-11-13 16:42:17,800 - openevolve.database - INFO -    Island 4: 10 programs, best=0.0000, avg=-inf, diversity=35.28, gen=0
+2025-11-13 16:42:17,818 - openevolve.database - INFO - Saved database with 50 programs to /users/krisub/evolve_cache/openevolve_output/checkpoints/checkpoint_3
+2025-11-13 16:42:17,819 - openevolve.controller - INFO - Saved best program at checkpoint 3 with metrics: combined_score=-inf
+2025-11-13 16:42:17,819 - openevolve.controller - INFO - Saved checkpoint at iteration 3 to /users/krisub/evolve_cache/openevolve_output/checkpoints/checkpoint_3
+2025-11-13 16:42:17,833 - openevolve.database - WARNING - Parent 9345e937-27c8-4918-8120-4bbc8cbea0dd not found, using current_island 0
+2025-11-13 16:42:17,833 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 9, 'diversity': 9}
+2025-11-13 16:42:17,833 - openevolve.database - INFO - Population size (51) exceeds limit (50), removing 1 programs
+2025-11-13 16:42:17,833 - openevolve.database - INFO - Population size after cleanup: 50
+2025-11-13 16:42:17,837 - openevolve.process_parallel - INFO - Iteration 0: Program 149c156e-4177-487f-b45a-785552d71e10 (parent: 9345e937-27c8-4918-8120-4bbc8cbea0dd) completed in 19.80s
+2025-11-13 16:42:17,838 - openevolve.process_parallel - INFO - Metrics: combined_score=-inf
+2025-11-13 16:42:17,844 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4.1
+2025-11-13 16:42:18,031 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:42:18,033 - openai._base_client - INFO - Retrying request to /chat/completions in 31.520000 seconds
+2025-11-13 16:42:19,499 - openevolve.evaluator - INFO - Evaluated program 0ee24641-6a1a-4643-a7d1-8edaa5a06ce4 in 9.29s: combined_score=-inf
+2025-11-13 16:42:19,511 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4.1
+2025-11-13 16:42:19,531 - openevolve.database - WARNING - Parent e10ec1b9-5cb5-45ce-a0b7-5e07e5d52aa4 not found, using current_island 0
+2025-11-13 16:42:19,531 - openevolve.database - INFO - New MAP-Elites cell occupied in island 0: {'complexity': 0, 'diversity': 9}
+2025-11-13 16:42:19,531 - openevolve.database - INFO - Population size (51) exceeds limit (50), removing 1 programs
+2025-11-13 16:42:19,532 - openevolve.database - INFO - Population size after cleanup: 50
+2025-11-13 16:42:19,533 - openevolve.process_parallel - INFO - Iteration 1: Program 0ee24641-6a1a-4643-a7d1-8edaa5a06ce4 (parent: e10ec1b9-5cb5-45ce-a0b7-5e07e5d52aa4) completed in 27.58s
+2025-11-13 16:42:19,533 - openevolve.process_parallel - INFO - Metrics: combined_score=-inf
+2025-11-13 16:42:19,533 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 1
+2025-11-13 16:42:19,547 - openevolve.database - INFO - Island Status:
+2025-11-13 16:42:19,547 - openevolve.database - INFO -    Island 0: 11 programs, best=-inf, avg=-inf, diversity=80.92, gen=2 (best: 149c156e-4177-487f-b45a-785552d71e10)
+2025-11-13 16:42:19,547 - openevolve.database - INFO -  * Island 1: 10 programs, best=0.0000, avg=-inf, diversity=23.60, gen=1
+2025-11-13 16:42:19,547 - openevolve.database - INFO -    Island 2: 9 programs, best=-inf, avg=-inf, diversity=39.63, gen=0
+2025-11-13 16:42:19,547 - openevolve.database - INFO -    Island 3: 10 programs, best=0.0000, avg=-inf, diversity=33.25, gen=0 (best: 0217125c-b34c-4ac3-b49d-7f725536f900)
+2025-11-13 16:42:19,548 - openevolve.database - INFO -    Island 4: 10 programs, best=0.0000, avg=-inf, diversity=35.28, gen=0
+2025-11-13 16:42:19,566 - openevolve.database - INFO - Saved database with 50 programs to /users/krisub/evolve_cache/openevolve_output/checkpoints/checkpoint_1
+2025-11-13 16:42:19,566 - openevolve.controller - INFO - Saved best program at checkpoint 1 with metrics: combined_score=-inf
+2025-11-13 16:42:19,566 - openevolve.controller - INFO - Saved checkpoint at iteration 1 to /users/krisub/evolve_cache/openevolve_output/checkpoints/checkpoint_1
+2025-11-13 16:42:19,688 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:42:19,689 - openai._base_client - INFO - Retrying request to /chat/completions in 31.304000 seconds
+2025-11-13 16:42:26,410 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:42:26,411 - openai._base_client - INFO - Retrying request to /chat/completions in 30.828000 seconds
+2025-11-13 16:42:39,695 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:42:39,697 - openai._base_client - INFO - Retrying request to /chat/completions in 22.692000 seconds
+2025-11-13 16:42:49,737 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:42:49,739 - openai._base_client - INFO - Retrying request to /chat/completions in 13.584000 seconds
+2025-11-13 16:42:51,151 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:42:51,152 - openai._base_client - INFO - Retrying request to /chat/completions in 11.888000 seconds
+2025-11-13 16:42:52,002 - openevolve.llm.openai - WARNING - Timeout on attempt 1/4. Retrying...
+2025-11-13 16:42:57,175 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:42:57,177 - openai._base_client - INFO - Retrying request to /chat/completions in 5.452000 seconds
+2025-11-13 16:42:57,384 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:03,191 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:03,193 - openai._base_client - INFO - Retrying request to /chat/completions in 30.546000 seconds
+2025-11-13 16:43:03,461 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:03,462 - openai._base_client - INFO - Retrying request to /chat/completions in 30.674000 seconds
+2025-11-13 16:43:08,769 - openevolve.llm.openai - WARNING - Timeout on attempt 1/4. Retrying...
+2025-11-13 16:43:09,133 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 16:43:11,965 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-13 16:43:13,874 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:13,875 - openai._base_client - INFO - Retrying request to /chat/completions in 30.631000 seconds
+2025-11-13 16:43:17,907 - openevolve.llm.openai - WARNING - Timeout on attempt 1/4. Retrying...
+2025-11-13 16:43:18,625 - openevolve.evaluator - INFO - Evaluated program dba8d066-368c-49c8-841e-f9ed35bbd755 in 9.44s: combined_score=-inf
+2025-11-13 16:43:18,642 - openevolve.llm.ensemble - INFO - Sampled model: gpt-4.1
+2025-11-13 16:43:18,650 - openevolve.database - INFO - New MAP-Elites cell occupied in island 2: {'complexity': 0, 'diversity': 7}
+2025-11-13 16:43:18,651 - openevolve.database - INFO - Population size (51) exceeds limit (50), removing 1 programs
+2025-11-13 16:43:18,651 - openevolve.database - INFO - Population size after cleanup: 50
+2025-11-13 16:43:18,652 - openevolve.process_parallel - INFO - Iteration 2: Program dba8d066-368c-49c8-841e-f9ed35bbd755 (parent: c0c6177b-e9aa-4579-94cb-752e6fc43478) completed in 86.69s
+2025-11-13 16:43:18,652 - openevolve.process_parallel - INFO - Metrics: combined_score=-inf
+2025-11-13 16:43:18,652 - openevolve.process_parallel - INFO - Checkpoint interval reached at iteration 2
+2025-11-13 16:43:18,667 - openevolve.database - INFO - Island Status:
+2025-11-13 16:43:18,667 - openevolve.database - INFO -    Island 0: 11 programs, best=-inf, avg=-inf, diversity=80.92, gen=2 (best: 149c156e-4177-487f-b45a-785552d71e10)
+2025-11-13 16:43:18,667 - openevolve.database - INFO -  * Island 1: 10 programs, best=0.0000, avg=-inf, diversity=23.60, gen=2
+2025-11-13 16:43:18,667 - openevolve.database - INFO -    Island 2: 10 programs, best=-inf, avg=-inf, diversity=39.63, gen=0 (best: dba8d066-368c-49c8-841e-f9ed35bbd755)
+2025-11-13 16:43:18,667 - openevolve.database - INFO -    Island 3: 9 programs, best=0.0000, avg=-inf, diversity=33.25, gen=0 (best: 0217125c-b34c-4ac3-b49d-7f725536f900)
+2025-11-13 16:43:18,667 - openevolve.database - INFO -    Island 4: 10 programs, best=0.0000, avg=-inf, diversity=35.28, gen=0
+2025-11-13 16:43:18,686 - openevolve.database - INFO - Saved database with 50 programs to /users/krisub/evolve_cache/openevolve_output/checkpoints/checkpoint_2
+2025-11-13 16:43:18,686 - openevolve.controller - INFO - Saved best program at checkpoint 2 with metrics: combined_score=-inf
+2025-11-13 16:43:18,687 - openevolve.controller - INFO - Saved checkpoint at iteration 2 to /users/krisub/evolve_cache/openevolve_output/checkpoints/checkpoint_2
+2025-11-13 16:43:18,789 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:18,791 - openai._base_client - INFO - Retrying request to /chat/completions in 31.378000 seconds
+2025-11-13 16:43:19,574 - openevolve.llm.openai - WARNING - Timeout on attempt 1/4. Retrying...
+2025-11-13 16:43:23,064 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:23,065 - openai._base_client - INFO - Retrying request to /chat/completions in 31.520000 seconds
+2025-11-13 16:43:24,722 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:24,724 - openai._base_client - INFO - Retrying request to /chat/completions in 31.304000 seconds
+2025-11-13 16:43:33,915 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:34,292 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:44,669 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:44,670 - openai._base_client - INFO - Retrying request to /chat/completions in 23.158000 seconds
+2025-11-13 16:43:50,310 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:50,311 - openai._base_client - INFO - Retrying request to /chat/completions in 18.188000 seconds
+2025-11-13 16:43:54,753 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:54,754 - openai._base_client - INFO - Retrying request to /chat/completions in 13.958000 seconds
+2025-11-13 16:43:56,186 - httpx - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2025-11-13 16:43:56,187 - openai._base_client - INFO - Retrying request to /chat/completions in 12.322000 seconds

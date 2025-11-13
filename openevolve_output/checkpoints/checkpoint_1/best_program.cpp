@@ -5,6 +5,7 @@
 #include <string>
 #include <unordered_map>
 
+
 typedef uint64_t obj_id_t;
 
 /**
@@ -127,9 +128,10 @@ public:
       return false;
     }
 
-    CacheObject &obj = map_iter->second;
+    // Simpler: increment frequency before computing new priority, use standard GDSF logic
+    auto &obj = map_iter->second;
     priority_queue.erase(obj.pq_iterator);
-    obj.frequency += 1;
+    ++obj.frequency;
     double new_pri = calculate_priority(obj.frequency, obj.size);
 
     PQNode new_node(new_pri, ++request_counter, obj_id);
@@ -192,4 +194,14 @@ public:
 
     return victim_id;
   }
+
+  /**
+   * Gets the current L-value (pri_last_evict).
+   */
+  double get_l_value() const { return pri_last_evict; }
+
+  /**
+   * Gets the current number of items in the cache.
+   */
+  size_t get_item_count() const { return cache_objects.size(); }
 };
