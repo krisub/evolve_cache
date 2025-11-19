@@ -93,15 +93,22 @@ private:
   /**
    * Helper function to calculate an object's priority (H-value).
    *
-   * From the original code: pri = L + (freq * 1.0e6 / size)
-   * The 1.0e6 is a scaling factor to keep the (freq/size)
-   * component significant.
+   * Piecewise: 
+   * - For tiny (<=8KB), boost priority to help early survival.
+   * - For very large (>2MB), penalize size slightly more.
+   * - In all cases, use log2(frequency+1) for diminishing returns.
    */
   double calculate_priority(uint64_t freq, uint64_t size) {
     if (size == 0) {
-      return pri_last_evict + (double)(freq) * 1.0e6;
+      return pri_last_evict + std::log2(freq + 1.0) * 2.0e5;
     }
-    return pri_last_evict + (double)(freq) * 1.0e6 / size;
+    if (size <= 8192) { // 8KB or less
+      return pri_last_evict + std::pow(freq+2, 1.12) * 2.1e5 / std::sqrt(size+1.0);
+    }
+    if (size > 2*1024*1024) { // >2MB
+      return pri_last_evict + std::log2(freq+1.0) * 2.3e5 / std::pow(size, 0.7);
+    }
+    return pri_last_evict + std::log2(freq + 1.15) * 1.7e5 / std::sqrt((double)size + 8.0);
   }
 
 public:
@@ -160,7 +167,15 @@ public:
     new_obj.size = obj_size;
     new_obj.frequency = 1;
 
-    double pri = calculate_priority(new_obj.frequency, new_obj.size);
+    // Grant bonus frequency for "tiny" or "giant" objects to improve early cache survival
+    uint64_t adj_freq = new_obj.frequency;
+    if (obj_size <= 8192)
+      adj_freq += 3;
+    else if (obj_size <= 65536)
+      adj_freq += 2;
+    else if (obj_size > 2*1024*1024)
+      adj_freq += 2;
+    double pri = calculate_priority(adj_freq, new_obj.size);
     PQNode new_node(pri, ++request_counter, obj_id);
     auto [set_iter, inserted] = priority_queue.insert(new_node);
 

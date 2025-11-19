@@ -48,19 +48,24 @@ finally:
     os.chdir(ORIGINAL_CWD)
 
 webcache_interface.code_dir = os.path.join(FUNSEARCH_ROOT, "webcache")
+print("CODE DIR:", webcache_interface.code_dir)
 webcache_interface.build_dir = os.path.join(webcache_interface.code_dir, "build")
+print("BUILD DIR:", webcache_interface.build_dir)
 
 webcache_interface.llm_code_path = os.path.join(
     webcache_interface.code_dir,
     "libCacheSim/libCacheSim/cache/eviction/FullCodeEvolve/LLMCode.h",
 )
+print("LLM CODE PATH:", webcache_interface.llm_code_path)
 
 webcache_interface.trace_dir = os.path.join(
-    webcache_interface.code_dir, "../libCacheSim/data"
+    webcache_interface.code_dir, "libCacheSim/data"
 )
+print("TRACE DIR:", webcache_interface.trace_dir)
 webcache_interface.trace_path = os.path.join(
     webcache_interface.trace_dir, webcache_interface.task_args.trace
 )
+print("TRACE PATH:", webcache_interface.trace_path)
 
 
 LOCK_FILE_DIR = os.path.join(FUNSEARCH_ROOT, "build_locks")
@@ -116,6 +121,12 @@ def evaluate(program_content: str) -> EvaluationResult:
                 run_success, results_dict, eval_logs = (
                     webcache_interface.run_experiment()
                 )
+                
+                print("SUCCESS:", run_success)
+                print("RETURN CODE:", eval_logs.get("returncode"))
+                print("\nSTDOUT:\n", eval_logs.get("stdout"))
+                print("\nSTDERR:\n", eval_logs.get("stderr"))
+
 
                 if not run_success:
                     run_error = eval_logs.get("stderr", "Run failed, no stderr")
