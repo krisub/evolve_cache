@@ -1,5 +1,25 @@
+export OPENAI_API_KEY="your-gemini-api-key"
+
 in cloned openevolve directory:
 
 python3 openevolve-run.py --config /users/krisub/evolve_cache/config.yaml /users/krisub/evolve_cache/initial_program.cpp /users/krisub/evolve_cache/evaluator.py
 
 for pid in $(pgrep -f openevolve-run.py); do kill -9 -$pid; done
+
+
+
+
+in openevolve scripts:
+python3 visualizer.py --path /users/krisub/evolve_cache/openevolve_output
+python3 visualizer.py --path /users/krisub/evolve_cache/openevolve_output_0/checkpoints
+
+
+
+python3 openevolve-run.py \
+  --config /users/krisub/evolve_cache/config.yaml \
+  /users/krisub/evolve_cache/initial_program.cpp \
+  /users/krisub/evolve_cache/initial_program_2.cpp \
+  /users/krisub/evolve_cache/evaluator.py
+
+  http://127.0.0.1:8080/api/data
+  http://127.0.0.1:8080
